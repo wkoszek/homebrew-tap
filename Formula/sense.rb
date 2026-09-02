@@ -1,8 +1,8 @@
 class Sense < Formula
   desc "Local, on-device perception CLI for macOS: images, audio, screen and camera"
   homepage "https://github.com/wkoszek/sense"
-  url "https://github.com/wkoszek/sense/releases/download/v2.0.0/sense-2.0.0-macos-universal.tar.gz"
-  sha256 "211d51e506947b098b3e3e69f60345c3a8bee2d62a307702650ec99a884bde66"
+  url "https://github.com/wkoszek/sense/releases/download/v2.1.0/sense-2.1.0-macos-universal.tar.gz"
+  sha256 "e48ce949e6b6baa4eeabf945d3f8a42428a105b1ba28db346b55c212f5b37c99"
   license "MIT"
 
   # Ships as a prebuilt, Developer ID-signed, notarized universal binary rather
@@ -31,6 +31,10 @@ class Sense < Formula
 
       On-device transcription needs a dictation language model installed under
       System Settings > Keyboard > Dictation.
+
+      For much better text-to-speech, download the free premium voices:
+
+        sense audio voices --install
     EOS
   end
 
