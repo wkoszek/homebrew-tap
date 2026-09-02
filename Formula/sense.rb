@@ -2,7 +2,6 @@ class Sense < Formula
   desc "Local, on-device perception CLI for macOS: images, audio, screen and camera"
   homepage "https://github.com/wkoszek/sense"
   url "https://github.com/wkoszek/sense/releases/download/v2.0.0/sense-2.0.0-macos-universal.tar.gz"
-  version "2.0.0"
   sha256 "211d51e506947b098b3e3e69f60345c3a8bee2d62a307702650ec99a884bde66"
   license "MIT"
 
