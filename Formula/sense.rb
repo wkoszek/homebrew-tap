@@ -1,8 +1,8 @@
 class Sense < Formula
   desc "Local, on-device perception CLI for macOS: images, audio, screen and camera"
   homepage "https://github.com/wkoszek/sense"
-  url "https://github.com/wkoszek/sense/releases/download/v3.2.0/sense-3.2.0-macos-universal.tar.gz"
-  sha256 "d2caba37c0f1cd8a399184c6805f042b8713fa76aac6950d4fb62826918883ef"
+  url "https://github.com/wkoszek/sense/releases/download/v3.2.1/sense-3.2.1-macos-universal.tar.gz"
+  sha256 "c0eafb0ca9f9f92ce9a1d592c2e9d4ff28a68eea33ca6028001d19814be2006e"
   license "MIT"
 
   # Ships as a prebuilt, Developer ID-signed, notarized universal binary rather
@@ -27,7 +27,9 @@ class Sense < Formula
         sense vision doctor --request
 
       The microphone and speech-recognition prompts appear the first time you
-      run `sense audio record` or `sense audio transcribe`.
+      run `sense audio record` or `sense audio transcribe`. These are keyed to
+      the executable path rather than the signature, so a `brew upgrade` lands
+      in a new Cellar path and macOS asks again.
 
       On-device transcription needs a dictation language model installed under
       System Settings > Keyboard > Dictation.
