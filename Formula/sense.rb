@@ -1,8 +1,8 @@
 class Sense < Formula
   desc "Local, on-device perception CLI for macOS: images, audio, screen and camera"
   homepage "https://github.com/wkoszek/sense"
-  url "https://github.com/wkoszek/sense/releases/download/v3.0.0/sense-3.0.0-macos-universal.tar.gz"
-  sha256 "e3165ec90f05237becd3313b2cf4de087dff1c464fb9e371bcb85a8485ac79b4"
+  url "https://github.com/wkoszek/sense/releases/download/v3.1.0/sense-3.1.0-macos-universal.tar.gz"
+  sha256 "31823aac552607589a45c5a59f3aa97c234253891b53f66f7377dd6c6b4458bb"
   license "MIT"
 
   # Ships as a prebuilt, Developer ID-signed, notarized universal binary rather
@@ -35,6 +35,9 @@ class Sense < Formula
       For much better text-to-speech, download the free premium voices:
 
         sense audio voices --install
+
+      To hear the difference first, `sense audio samples --open` writes a
+      self-contained page comparing them.
     EOS
   end
 
